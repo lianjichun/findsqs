@@ -1,0 +1,12 @@
+&insqs
+  comp = 4
+  cell = 32
+  conc = 8,8,8,8
+  symb = A,B,C,D
+  nlat = 1
+  nsqs = 2
+  cuts = 3,1
+  npmc = 4
+  tole = 0.1
+  prec = 1D-5
+/

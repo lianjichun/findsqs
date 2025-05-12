@@ -1,0 +1,11 @@
+#!/bin/bash
+path='/home/ljc/findsqs/utils'
+n=`ls|grep "poscar-"|tail -1|awk -F- '{print $2}'`
+d=${#n}
+if [ $1 ]
+then
+  n="-`printf "%0${d}d" $1`"
+else
+  n="-*"
+fi
+for i in poscar$n;do cd $i;for j in *;do echo $j|$path/pos2atat.x;done;cd ../;done > sqs.out

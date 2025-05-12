@@ -1,0 +1,12 @@
+&insqs
+  comp = 3
+  cell = 27
+  conc = 9,9,9
+  symb = A,B,C
+  nlat = 0
+  nsqs = 1
+  cuts = 4,1
+  npmc = 6
+  tole = 0.1
+  prec = 1D-5
+/
